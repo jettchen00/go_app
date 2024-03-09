@@ -20,4 +20,5 @@ bin/udpsvr : mod_tidy $(UDP_SERVER_SRC)
 
 .PHONY : clean
 clean :
+	go clean -x -r -cache -i
 	rm -rf bin/udpsvr
